@@ -23,5 +23,10 @@ else if (n < 0)
 printf("%d", n);
 puts(" is negative");
 }
+else if (n == 0)
+{
+printf("%d", n);
+puts(" is zero");
+}
 return (0);
 }
