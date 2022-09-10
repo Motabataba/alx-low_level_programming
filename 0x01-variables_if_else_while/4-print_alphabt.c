@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+/**
+ * main - entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+int lowerCase = 'a';
+
+while (lowerCase <= 'z')
+{
+if (lowerCase != 'q' && lowerCase != 'e')
+{
+putchar(lowerCase);
+}
+
+if (lowerCase == 'z')
+{
+putchar('\n');
+}
+lowerCase++;
+}
+
+return (0);
+}
