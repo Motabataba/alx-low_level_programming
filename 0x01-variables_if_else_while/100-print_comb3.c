@@ -8,10 +8,10 @@
 int main(void)
 {
 int i = 0;
-int j = 1;
-while (i < 9)
+int j = 0;
+for (i = 0; i < 9; i++)
 {
-for (j = 1; j < 10; j++)
+for (j = i + 1; j < 10; j++)
 {
 putchar((i % 10) + '0');
 putchar((j % 10) + '0');
@@ -25,7 +25,7 @@ putchar(',');
 putchar(' ');
 }
 }
-i++;
+
 }
 putchar('\n');
 return (0);
