@@ -1,0 +1,20 @@
+#include "main.h"
+
+/**
+ * _abs - check code
+ * @c :value to abs
+ *
+ * Return: a value val
+ */
+
+int _abs(int c)
+{
+int val;
+
+if (c < 0)
+val = (-1) * c;
+else
+val = c;
+
+return (val);
+}
