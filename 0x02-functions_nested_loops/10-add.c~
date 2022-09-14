@@ -1,0 +1,13 @@
+#include "main.h"
+
+/**
+ * add - add numbers
+ *
+ * Return: adde numbers
+ */
+int add(int a, int b)
+{
+
+return (a + b);
+
+}
