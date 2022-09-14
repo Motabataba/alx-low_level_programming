@@ -1,0 +1,45 @@
+#include "main.h"
+
+/**
+ * times_table - print table of 9
+ *
+ * Return:  nothing
+ */
+
+void times_table(void)
+{
+int vert;
+int hor;
+int times;
+
+for (vert = 0; vert <= 9; vert++)
+{
+for (hor = 0;  hor <= 9; hor++)
+{
+times = vert * hor;
+
+if (hor != 0)
+{
+_putchar(',');
+_putchar(' ');
+}
+
+if (times >= 10)
+{
+_putchar((times / 10) + '0');
+_putchar((times % 10) + '0');
+}
+else if (times < 10 && hor != 0)
+{
+_putchar(' ');
+_putchar((times % 10) + '0');
+}
+else
+{
+_putchar((times % 10) + '0');
+}
+}
+_putchar('\n');
+}
+
+}
