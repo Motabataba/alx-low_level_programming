@@ -6,21 +6,5 @@
 #define MAIN_H
 
 int _putchar(char C);
-
+void print_alphabet(void);
 #endif
-
-/**
- * print_alphabet - print alphabets
- *
- */
-void print_alphabet(void)
-{
-int counter = 'a';
-
-while (counter <= 'z')
-{
-_putchar(counter);
-counter++;
-}
-_putchar('\n');
-}
