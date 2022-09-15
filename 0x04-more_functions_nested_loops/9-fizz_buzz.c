@@ -11,25 +11,32 @@ int main(void)
 int n;
 for (n = 1; n <= 100; n++)
 {
-if (n % 5 == 0 && n % 3 == 0)
+if ((n % 5 == 0) && (n % 3 == 0))
 {
-printf("FizzBuzz");
+printf("FizzBuzz ");
 }
 else if (n % 5 == 0)
 {
-printf("Buzz");
-}
-else if (n % 3 == 0)
+if (n != 100)
 {
-printf("Fizz");
+printf("Buzz ");
 }
 else
 {
-printf("%d", n);
+printf("Buzz");
+printf("\n");
+}
+}
+else if (n % 3 == 0)
+{
+printf("Fizz ");
+}
+else
+{
+printf("%d ", n);
 }
 
-printf(" ");
 }
-printf("\n");
+
 return (0);
 }
