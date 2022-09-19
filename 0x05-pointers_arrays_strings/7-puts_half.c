@@ -18,13 +18,13 @@ i++;
 }
 
 if ((i % 2) == 0)
-n = (i - 1) / 2;
+n = (i + 1) / 2;
 else
 n = i / 2;
 
-while ((n + 1) <= i)
+while (str[n] != '\0')
 {
-_putchar(str[(n + 1)]);
+_putchar(str[n]);
 n++;
 }
 _putchar('\n');
